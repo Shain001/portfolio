@@ -18,15 +18,20 @@
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
     <!-- Todo: put here your site title -->
-    <title>[Your name here] | Developer</title>
+    <title>[Shenyi Zhang] | Software Engineer</title>
     <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
+    <meta name="keywords" content="[Shenyi Zhang], [Shain001], Java" />
     <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="[Your name here] | Developer" />
-
+    <meta name="description" content="[Shenyi Zhang] | Software Engineer" />
+    <!-- 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="styles.scss" />
     <script
@@ -46,9 +51,9 @@
     <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
+          Hi, my name is <span class="text-color-main">Shenyi Zhang</span>
           <br />
-          I'm the Unknown Developer.
+          I'm a Backend Software Engineer.
         </h1>
         <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
@@ -71,7 +76,7 @@
                 class="img-fluid rounded shadow-lg"
                 height="auto"
                 width="300px"
-                src="assets/profile.jpg"
+                src="assets/profile.JPG"
                 alt="Profile Image"
               />
             </div>
@@ -79,11 +84,11 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you have!
+                I'm a backend software engineer currently working at Coles Group, Melbourne, Australia. I'm interested in high-available micro-service development, distributed systems, data structures, 
+                and algorithms. More skills I have include Java, Python, Terraform, Spring Frameworks, DevOps Automation, Redis, MySQL, Message Queue, Azure, Docker, K8s, etc.
               </p>
               <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
+                I'm passionate about working with talented people, and happy to embrace challenges and cutting-edge technologies. 
               </p>
               <span class="d-flex mt-3">
                 <a
@@ -94,7 +99,10 @@
                 >
                   View Resume
                 </a>
+                
               </span>
+
+
             </div>
           </div>
         </div>
@@ -108,34 +116,34 @@
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Projects</h2>
 
-          <!-- Notice: each .row is a project -->
+          <!-- Merch -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
+                <h3 class="project-wrapper__text-title">Merchandise Domain API</h3>
                 <div>
                   <p class="mb-4">
-                    Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: 
-                    complement the information: the skills learned or reinforced in its realization and how you faced it, 
-                    prove to be proactive in the search for solutions.
+                    A teamwork project which developed micro-services that provides Coles websites and apps with internal APIs to query product information.
+                  </p>
+                  <p class="mb-4">
+                    It is a facade service that integrates multiple domains while millions of requests would be handled per day. Therefore, we implemented virtual threads using Java 19 to parallel the downstream calls to improve the response speed.
+                  </p>
+                  <p class="mb-4">
+                    It was enjoyable to learn about virtual threads on the fly, and it gave me a sense of fulfillment by taking charge of infrastructure establishment for the first time.
+                  </p>
+                  <p class="mb-4">
+                    <b>Key Skills:</b> Java 19, Virtual Threads, SpringBoot, Redis, Terraform, Azure Pipelines, Docker, K8s, etc. 
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://www.liquorland.com.au/"
                 >
                   See Live
                 </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
+                
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
@@ -150,8 +158,8 @@
                   >
                     <img
                       alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
+                      class="img-fluid" style="height: 480px;"
+                      src="assets/projects/merch.jpeg"
                     />
                   </div>
                 </a>
@@ -160,16 +168,23 @@
           </div>
           <!-- /END Project -->
 
-          <!-- Notice: each .row is a project -->
+          <!-- Sales Injector -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
+                <h3 class="project-wrapper__text-title">Giftcard Transaction Enricher</h3>
                 <div>
                   <p class="mb-4">
-                    Demonstrate in this description the skills of a programmer: such as having commitment, 
-                    having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, 
-                    you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
+                    A teamwork micro-service project to process Coels gift card sales transactions. The services receive transactions from third-party vendors and save the data to a SQL database and a NonSQL respectively database after enrichment.
+                  </p>
+                  <p class="mb-4">
+                    The project was implemented in a reactive style using Spring Webflux to improve the performance when tps is high, and a simple front page was also developed using NextJS to monitor the transactions.
+                  </p>
+                  <p class="mb-4">
+                    This project brought me to many new technologies I never used before, including Spring Webflux, stream/reactive programming, and infrastructure as code using Terraform. But I'm proud to say that I achieved good productivity and quality of work.
+                  </p>
+                  <p class="mb-4">
+                    <b>Key Skills:</b> Java, Terraform, Spring Webflux, Service Bus (Message Queue), CosmosDB, NextJS, k8s, etc.
                   </p>
                 </div>
                 <a
@@ -178,15 +193,7 @@
                   class="cta-btn cta-btn--hero"
                   href="#!"
                 >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
+                  Internal Project, Showcase Not Available
                 </a>
               </div>
             </div>
@@ -202,8 +209,8 @@
                   >
                     <img
                       alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
+                      class="img-fluid"  style="height: 525px;"
+                      src="assets/projects/sale.jpeg"
                     />
                   </div>
                 </a>
@@ -212,32 +219,34 @@
           </div>
           <!-- /END Project -->
 
-          <!-- Notice: each .row is a project -->
+          <!-- Eco -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
+                <h3 class="project-wrapper__text-title">Research Project: Eco-friendly Navigation Algorithm</h3>
                 <div>
                   <p class="mb-4">
-                    If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
-                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.
+                    This is my Minor Thesis project which has been published on 2022 Australian Database Conference. The project designed and developed a routing algorithm that can find the most fuel-saving route
+                    between destinations.
+                  </p>
+                  <p>
+                    Multiple academic experiments were designed and conducted by establishing a graph based on real-world road data.
+                    The result shows that the proposed algorithm improved the routing accuracy by about 10% compared with other Eco-friendly algorithms. 
+                  </p>
+                  <p>
+                    This experience significantly improved my research and problem-solving skills; moreover, it provided me with insights into how to use data structure and algorithms to solve practical problems.
+                  </p>
+                  <p>
+                    <b>Key Skills:</b> C++, Data Structure and Algorithms, Academic Research, Eco-routing, Mobility Profile. 
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://link.springer.com/chapter/10.1007/978-3-031-15512-3_10/"
                 >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
+                See Publication
                 </a>
               </div>
             </div>
@@ -253,8 +262,64 @@
                   >
                     <img
                       alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
+                      class="img-fluid" style="height: 545px;"
+                      src="assets/projects/eco.jpeg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Online Sale -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Crazy Sale System</h3>
+                <div>
+                  <p class="mb-4">
+                    This project is where my journey truly began! After my master's learning, I realized that the school projects were far from enough to be a real proficient software engineer, so I started this project to learn
+                    advanced technologies and get my hands dirty.    
+                  </p>
+                  <p>
+                    This project developed a demo crazy sale system where customers buy products that has a time-limit promotion. It tries to maximize the system's concurrency capability to handle huge amounts of requests per second while the tread safety is ensured.
+                  </p>
+                  <p>
+                    The technologies used include Redis Sentinal for high availability, MySQL and Sharding JDBC for improvement of database capacity, ZooKeeper as a registering center, Redis Distributed Lock for thread safety,
+                    Rabbit MQ for fault tolerance, and a Bloom Filter to prevent malicious requests.
+                  </p>
+                  <p>
+                    The JMeter test shows that the system can handle around 5000 tps when running on a single machine.
+                  </p>
+                  <p>
+                    <b>Key Skills:</b> SpringBoot, Spring Cloud, ZooKeeper, MySQL, Redis, Distributed Lock, Redis Sentinel, Sharding-JDBC, Distributed System, etc. 
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/Shain001/flashsale"
+                >
+                  See Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid" style="height: 665px;"
+                      src="assets/projects/onlineshopping.gif"
                     />
                   </div>
                 </a>
@@ -267,18 +332,23 @@
     </section>
     <!-- /END Projects Section -->
 
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
     <!-- **** Contact Section **** -->
     <section id="contact">
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
+          <p class="contact-wrapper__text">shain.jobseeking@gmail.com</p>
           <a
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
+            href="mailto:shain.jobseeking@gmail.com"
+            >Email Me</a
           >
         </div>
       </div>
@@ -292,14 +362,14 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
+          <a rel="noreferrer" href="https://shain001.github.io/" target="_blank">
+            <i class="fa-solid fa-blog fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-linkedin fa-inverse"></i>
+          <a rel="noreferrer" href="https://www.linkedin.com/in/shenyi001/" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-github fa-inverse"></i>
+          <a rel="noreferrer" href="https://github.com/Shain001" target="_blank">
+            <i class="fa-brands fa-github"></i>
           </a>
         </div>
 
@@ -307,34 +377,10 @@
 
         <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
         <p class="footer__text">
-          © 2021 - Template developed by
-          <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
+          © 2023 - Shenyi Zhang
+          <!-- <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
             >Jacobo Martínez</a
-          >
-        </p>
-
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer" 
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobiwave/simplefolio on GitHub"
-            >Star</a
-          >
+          > -->
         </p>
       </div>
     </footer>
