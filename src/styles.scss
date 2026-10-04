@@ -189,7 +189,7 @@ nav a {
   justify-content: center;
 }
 .profile-image {
-  width: min(100%, 300px);
+  width: min(100%, 360px);
   height: auto;
   aspect-ratio: 1;
   object-fit: cover;
@@ -365,7 +365,7 @@ nav a {
     margin-bottom: 3.2rem;
   }
   .profile-image {
-    width: 180px;
+    width: min(100%, 220px);
   }
   .work-grid,
   .earlier-grid {
