@@ -1,6 +1,3 @@
-import initScrollReveal from "./scripts/scrollReveal";
-import initTiltEffect from "./scripts/tiltAnimation";
-import { targetElements, defaultProps } from "./data/scrollRevealConfig";
-
-initScrollReveal(targetElements, defaultProps);
-initTiltEffect();
+// Content and navigation remain available without JavaScript.
+const year = document.getElementById("year");
+if (year) year.textContent = new Date().getFullYear();

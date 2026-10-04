@@ -1,391 +1,427 @@
-<!--
-  Hello!
-  -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
-  -
-  Github Repo: https://github.com/cobiwave/simplefolio/
-  Readme: https://github.com/cobiwave/simplefolio/README.md
-  -
-  For business & inquires, contact me -> jacobojavier98@gmail.com
--->
 <!DOCTYPE html>
-<html lang="en" class="sr">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
-
-    <!-- Todo: put here your site title -->
-    <title>[Shenyi Zhang] | Software Engineer</title>
-    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[Shenyi Zhang], [Shain001], Java" />
-    <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="[Shenyi Zhang] | Software Engineer" />
-    <!-- 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    /> -->
-  
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    <title>Shenyi Zhang | SRE &amp; AI Infrastructure</title>
+    <meta
+      name="description"
+      content="Shenyi Zhang is a Site Reliability Engineer working on infrastructure automation, LLM platforms, agent tooling and reliable production systems."
     />
+    <meta name="author" content="Shenyi Zhang" />
+    <meta name="theme-color" content="#087e82" />
+    <link rel="canonical" href="https://shain.info/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Shenyi Zhang | SRE &amp; AI Infrastructure"
+    />
+    <meta
+      property="og:description"
+      content="Infrastructure automation, LLM platforms and tools that make production work easier."
+    />
+    <meta property="og:url" content="https://shain.info/" />
+    <meta name="twitter:card" content="summary" />
     <link rel="stylesheet" href="styles.scss" />
-    <script
-      defer
-      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
-    ></script>
-
-    <!-- Todo: remove the below script once you finish your portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
-
-  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
-    <div id="top"></div>
-
-    <!-- **** Hero Section **** -->
-    <section id="hero" class="jumbotron">
-      <div class="container">
-        <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Shenyi Zhang</span> 👾
-          <br />
-          I'm a Backend Software Engineer.
-        </h1>
-        <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >Know more</a
-          >
-        </p>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header id="top" class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="#top" aria-label="Shenyi Zhang home"
+          >SZ<span>.</span></a
+        >
+        <nav aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
-    </section>
-    <!-- /END Hero Section -->
+    </header>
 
-    <!-- **** About Section **** -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title load-hidden">About me</h2>
-        <div class="row about-wrapper">
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image load-hidden">
-              <img
-                alt="Profile Image"
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="assets/profile.jpg"
-                alt="Profile Image"
-              />
-            </div>
+    <main id="main">
+      <section id="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <p class="eyebrow">Site reliability · AI infrastructure</p>
+          <h1 id="hero-title" class="hero-title">
+            Hi, I'm <span class="text-color-main">Shenyi Zhang.</span><br />I
+            build platforms<br />people can rely on.
+          </h1>
+          <p class="hero-intro">
+            From backend services to infrastructure automation, LLM platforms
+            and tools for the engineers who operate them.
+          </p>
+          <div class="hero-cta">
+            <a class="cta-btn cta-btn--hero" href="#experience"
+              >Explore my work <span aria-hidden="true">↓</span></a
+            >
+            <a
+              class="text-link"
+              href="https://github.com/Shain001"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub <span aria-hidden="true">↗</span></a
+            >
           </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info load-hidden">
-              <p class="about-wrapper__info-text">
-                I'm a backend software engineer currently working at Coles Group, Melbourne, Australia&#127462;&#127482;. I'm interested in high-available micro-service development, distributed systems, data structures, 
-                and algorithms. More skills I have include Java, Python, Terraform, Spring Frameworks, DevOps Automation, Redis, MySQL, Message Queue, Azure, Docker, K8s, etc.
-              </p>
-              <p class="about-wrapper__info-text">
-                I'm passionate about working with talented people, and happy to embrace challenges and cutting-edge technologies.
-              </p>
-              <span class="d-flex mt-3">
+        </div>
+      </section>
+
+      <section id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="row about-wrapper align-items-center">
+            <div class="col-md-5 col-sm-12">
+              <div class="about-wrapper__image">
+                <img
+                  alt="Shenyi Zhang"
+                  class="profile-image"
+                  width="300"
+                  height="300"
+                  src="assets/profile.jpg"
+                />
+              </div>
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <div class="about-wrapper__info">
+                <p class="eyebrow">About me</p>
+                <h2 id="about-title">
+                  Software engineering.<br />A reliability mindset.
+                </h2>
+                <p>
+                  I'm a Site Reliability Engineer at
+                  <strong>TikTok USDS JV</strong>, with a background in backend
+                  and microservice development.
+                </p>
+                <p>
+                  My work spans database infrastructure, capacity automation,
+                  observability and AI-assisted operations. More recently, I've
+                  contributed to LLM gateway integrations, coding-agent tooling
+                  and MCP services.
+                </p>
+                <p>
+                  Previously at <strong>Coles Group</strong>, I worked on retail
+                  APIs and transaction-processing services. I also have a
+                  research background in graph algorithms and fuel-efficient
+                  routing.
+                </p>
                 <a
-                  rel="noreferrer"
-                  target="_blank"
                   class="cta-btn cta-btn--resume"
-                  href="assets/resume.pdf"
+                  href="https://www.linkedin.com/in/shenyi001/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Connect on LinkedIn <span aria-hidden="true">↗</span></a
                 >
-                  View Resume
-                </a>
-                
-              </span>
-
-
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- /END About Section -->
+      </section>
 
-    <!-- **** Projects Section **** -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
-
-          <!-- Merch -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Merchandise Domain API</h3>
-                <div>
-                  <p class="mb-4">
-                    A teamwork project which developed micro-services that provides Coles websites and apps with internal APIs to query product information.
-                  </p>
-                  <p class="mb-4">
-                    It is a facade service that integrates multiple domains while millions of requests would be handled per day. Therefore, we implemented virtual threads using Java 19 to parallel the downstream calls to improve the response speed.
-                  </p>
-                  <p class="mb-4">
-                    It was enjoyable to learn about virtual threads on the fly, and it gave me a sense of fulfillment by taking charge of infrastructure establishment for the first time😋.
-                  </p>
-                  <p class="mb-4">
-                    <b>Key Skills:</b> Java 19, Virtual Threads, SpringBoot, Redis, Terraform, Azure Pipelines, Docker, K8s, etc. 
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://www.liquorland.com.au/"
-                >
-                  See Live
-                </a>
-                
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="https://www.liquorland.com.au/" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid" style="height: 480px;"
-                      src="assets/projects/merch.jpeg"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
+      <section id="experience" aria-labelledby="experience-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Current focus · TikTok USDS JV</p>
+            <h2 id="experience-title">Selected engineering work</h2>
+            <p class="section-intro">
+              Building the workflows, integrations and operational tools behind
+              reliable infrastructure.
+            </p>
           </div>
-          <!-- /END Project -->
-
-          <!-- Sales Injector -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Gift Card Transaction Enricher</h3>
-                <div>
-                  <p class="mb-4">
-                    A teamwork micro-service project to process Coels gift card sales transactions. The services receive transactions from third-party vendors and save the data to a SQL database and a NonSQL database respectively after enrichment.
-                  </p>
-                  <p class="mb-4">
-                    The project was implemented in a reactive style using Spring Webflux to improve the performance when TPS is high, and a simple front page was also developed using NextJS to monitor the transactions.
-                  </p>
-                  <p class="mb-4">
-                    This project brought me to many new technologies I never used before&#128561;, including Spring Webflux, stream/reactive programming, and infrastructure as code using Terraform. But I'm proud to say that I achieved good productivity and quality of work😝&#129395;.
-                  </p>
-                  <p class="mb-4">
-                    <b>Key Skills:</b> Java, Terraform, Spring Webflux, Service Bus (Message Queue), CosmosDB, NextJS, k8s, etc.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"                  
-                >
-                  Internal Project, Showcase Not Available
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"  style="height: 525px;"
-                      src="assets/projects/sale.jpeg"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
+          <div class="work-grid">
+            <article class="work-item">
+              <p class="work-number">01 / Infrastructure</p>
+              <h3>Database lifecycle automation</h3>
+              <p>
+                Contributed to a cross-region component platform for relational
+                databases and NoSQL infrastructure, bringing execution tracking,
+                approvals and resource operations into shared workflows.
+              </p>
+              <ul>
+                <li>
+                  Server and proxy scaling, resource-pool selection and
+                  provisioning.
+                </li>
+                <li>
+                  Replica removal and remediation workflows for database
+                  consistency risks.
+                </li>
+                <li>
+                  Reusable templates to separate region-specific execution
+                  logic.
+                </li>
+              </ul>
+              <p class="work-topics">
+                Platform engineering · Workflow automation · Databases
+              </p>
+            </article>
+            <article class="work-item">
+              <p class="work-number">02 / Capacity</p>
+              <h3>Capacity governance &amp; resilience</h3>
+              <p>
+                Worked on state-machine-driven capacity optimization and
+                regional capacity alignment for database and cache services.
+              </p>
+              <ul>
+                <li>
+                  Separate evaluation and execution, using monitoring signals
+                  and human approval.
+                </li>
+                <li>
+                  Scheduling, task processing and explicit state transitions.
+                </li>
+                <li>
+                  Alert-triggered scaling callbacks and batch scaling APIs.
+                </li>
+              </ul>
+              <p class="work-topics">
+                State machines · Capacity planning · Reliability
+              </p>
+            </article>
+            <article class="work-item">
+              <p class="work-number">03 / AI platforms</p>
+              <h3>Multi-provider LLM gateway</h3>
+              <p>
+                Contributed regional integrations to an enterprise LLM gateway,
+                connecting model access with the tooling needed to operate it.
+              </p>
+              <ul>
+                <li>
+                  Provider protocol conversion, including request, response and
+                  streaming compatibility.
+                </li>
+                <li>
+                  Asynchronous processing for usage, health and trace data.
+                </li>
+                <li>
+                  Management-console adaptations and coding-tool installation
+                  and configuration.
+                </li>
+              </ul>
+              <p class="work-topics">
+                LLM infrastructure · Protocol integration · Developer tooling
+              </p>
+            </article>
+            <article class="work-item">
+              <p class="work-number">04 / Agent tooling</p>
+              <h3>Operational tools for agents</h3>
+              <p>
+                Built MCP services that turn manual operational tasks into
+                reusable tools for agent-assisted workflows.
+              </p>
+              <ul>
+                <li>
+                  Service integrations that expose operational capabilities
+                  through MCP.
+                </li>
+                <li>
+                  Reusable, agent-callable tools for recurring engineering
+                  tasks.
+                </li>
+                <li>
+                  Related developer-tooling work on model discovery and MCP
+                  configuration.
+                </li>
+              </ul>
+              <p class="work-topics">
+                Model Context Protocol · Automation · Tool integration
+              </p>
+            </article>
+            <article class="work-item">
+              <p class="work-number">05 / AI-assisted operations</p>
+              <h3>Incident context &amp; handoff</h3>
+              <p>
+                Contributed to an SRE incident assistant that brings incident
+                information into the responder workflow.
+              </p>
+              <ul>
+                <li>
+                  Data collection, interactive cards, commands and contextual
+                  responses.
+                </li>
+                <li>Incident-context and root-cause summaries for handover.</li>
+                <li>
+                  Handoff report generation released and used in production.
+                </li>
+              </ul>
+              <p class="work-topics">
+                LLM applications · Incident workflows · Production tooling
+              </p>
+            </article>
+            <article class="work-item">
+              <p class="work-number">06 / Reliability</p>
+              <h3>Observability &amp; operational readiness</h3>
+              <p>
+                Built and improved monitoring and alerting workflows, alongside
+                infrastructure migration and production support.
+              </p>
+              <ul>
+                <li>
+                  Metric ingestion, alert thresholds, escalation policies and
+                  notification routing.
+                </li>
+                <li>
+                  Automatic alert coverage for new workloads and reduced manual
+                  maintenance.
+                </li>
+                <li>
+                  Peak-traffic readiness reviews, disaster-recovery reviews and
+                  oncall support.
+                </li>
+              </ul>
+              <p class="work-topics">
+                Observability · Incident response · Infrastructure assurance
+              </p>
+            </article>
           </div>
-          <!-- /END Project -->
-
-          <!-- Eco -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Research Project: Eco-friendly Navigation Algorithm</h3>
-                <div>
-                  <p class="mb-4">
-                    This is my Minor Thesis project which has been published on 2022 Australian Database Conference. The project designed and developed a routing algorithm that can find the most fuel-saving route
-                    between destinations.
-                  </p>
-                  <p>
-                    Multiple academic experiments were designed and conducted by establishing a graph based on real-world road data.
-                    The result shows that the proposed algorithm can save up to 35% fuel consumption on a trip. 
-                  </p>
-                  <p>
-                    This experience significantly improved my research and problem-solving skills; moreover, it provided me with insights into how to use data structure and algorithms to solve practical problems😎.
-                  </p>
-                  <p>
-                    <b>Key Skills:</b> C++, Data Structure and Algorithms, Academic Research, Eco-routing, Mobility Profile. 
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://link.springer.com/chapter/10.1007/978-3-031-15512-3_10/"
-                >
-                See Publication
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="https://link.springer.com/chapter/10.1007/978-3-031-15512-3_10/" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid" style="height: 545px;"
-                      src="assets/projects/eco.jpeg"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Online Sale -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Crazy Sale System</h3>
-                <div>
-                  <p class="mb-4">
-                    This project is where my journey truly began! After my master's learning, I realized that the school projects were far from enough to be a real proficient software engineer, so I started this project to learn
-                    advanced technologies and get my hands dirty🙇‍♂️.    
-                  </p>
-                  <p>
-                    This project developed a demo crazy sale system where customers buy products that has a time-limit promotion. It tries to maximize the system's concurrency capability to handle huge amounts of requests per second while the tread safety is ensured.
-                  </p>
-                  <p>
-                    The technologies used include Redis Sentinal for high availability, MySQL and Sharding JDBC for improvement of database capacity, ZooKeeper as a registering center, Redis Distributed Lock for thread safety,
-                    Rabbit MQ for fault tolerance, and a Bloom Filter to prevent malicious requests.
-                  </p>
-                  <p>
-                    The JMeter test shows that the system can handle around 5000 tps when running on a single machine.
-                  </p>
-                  <p>
-                    <b>Key Skills:</b> SpringBoot, Spring Cloud, ZooKeeper, MySQL, Redis, Distributed Lock, Redis Sentinel, Sharding-JDBC, Distributed System, etc. 
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://github.com/Shain001/flashsale"
-                >
-                  See Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="https://github.com/Shain001/flashsale" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid" style="height: 665px;"
-                      src="assets/projects/onlineshopping.gif"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
         </div>
-      </div>
-    </section>
-    <!-- /END Projects Section -->
+      </section>
 
+      <section id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Earlier work &amp; research</p>
+            <h2 id="projects-title">Where the foundations came from</h2>
+            <p class="section-intro">
+              Backend engineering, distributed systems and algorithmic research.
+            </p>
+          </div>
+          <div class="earlier-grid">
+            <article class="earlier-item">
+              <p class="work-number">Coles Group · Team project</p>
+              <h3>Merchandise Domain API</h3>
+              <p>
+                Worked on backend APIs serving product information to retail
+                websites and apps. The service combined downstream domains,
+                using Java virtual threads to parallelize requests.
+              </p>
+              <p>
+                My work also included infrastructure setup and delivery
+                automation.
+              </p>
+              <p class="work-topics">
+                Java · Spring Boot · Redis · Terraform · Azure · Kubernetes
+              </p>
+              <a
+                class="text-link"
+                href="https://www.liquorland.com.au/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Retail website <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="earlier-item">
+              <p class="work-number">Coles Group · Team project</p>
+              <h3>Gift card transaction processing</h3>
+              <p>
+                Worked on services that receive and enrich transactions from
+                third-party vendors, then persist them to relational and NoSQL
+                stores.
+              </p>
+              <p>
+                The implementation used Spring WebFlux, messaging and
+                infrastructure as code, with a Next.js interface for transaction
+                monitoring.
+              </p>
+              <p class="work-topics">
+                Java · Spring WebFlux · Service Bus · Cosmos DB · Next.js
+              </p>
+            </article>
+            <article class="earlier-item research-item">
+              <p class="work-number">
+                Research · Australian Database Conference 2022
+              </p>
+              <h3>Fuel-efficient navigation</h3>
+              <p>
+                My minor-thesis research explored routing algorithms for finding
+                fuel-efficient paths. I built experiments around graph
+                representations of real-world road data.
+              </p>
+              <p>
+                The work connects data structures and algorithms with practical
+                transport problems.
+              </p>
+              <p class="work-topics">
+                C++ · Graph algorithms · Eco-routing · Experimental research
+              </p>
+              <a
+                class="text-link"
+                href="https://link.springer.com/chapter/10.1007/978-3-031-15512-3_10"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Read the publication <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="earlier-item">
+              <p class="work-number">Personal project</p>
+              <h3>Flash-sale system</h3>
+              <p>
+                A hands-on project exploring concurrent order processing and
+                distributed systems through a time-limited retail promotion
+                workflow.
+              </p>
+              <p>
+                I worked with caching, distributed locking, database sharding
+                and messaging to understand their role in a high-concurrency
+                service.
+              </p>
+              <p class="work-topics">
+                Spring Boot · Redis · MySQL · ZooKeeper · RabbitMQ
+              </p>
+              <a
+                class="text-link"
+                href="https://github.com/Shain001/flashsale"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Explore the source <span aria-hidden="true">↗</span></a
+              >
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- /END Projects Section -->
+      </section>
 
-    <!-- **** Contact Section **** -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">shain.jobseeking@gmail.com</p>
+      <section id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <p class="eyebrow">Get in touch</p>
+          <h2 id="contact-title">Let's talk engineering.</h2>
+          <p class="contact-copy">
+            Infrastructure, reliable systems, AI tooling, or an interesting
+            problem to solve.
+          </p>
           <a
-            rel="noreferrer"
-            target="_blank"
             class="cta-btn cta-btn--resume"
             href="mailto:shain.jobseeking@gmail.com"
-            >Email Me</a
+            >shain.jobseeking@gmail.com <span aria-hidden="true">↗</span></a
           >
         </div>
-      </div>
-    </section>
-    <!-- /END Contact Section -->
-
-    <!-- **** Footer Section **** -->
-    <footer class="footer navbar-static-bottom">
-      <div class="container">
-        <a rel="noreferrer" href="#top" class="back-to-top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-        </a>
-        <div class="social-links">
-          <a rel="noreferrer" href="https://shain001.github.io/" target="_blank">
-            <i class="fa-solid fa-blog fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="https://www.linkedin.com/in/shenyi001/" target="_blank">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a rel="noreferrer" href="https://github.com/Shain001" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </div>
-
-        <hr />
-
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
-        <p class="footer__text">
-          © 2023 - Shenyi Zhang
-          <!-- <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
-            >Jacobo Martínez</a
-          > -->
-        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year">2026</span> Shenyi Zhang</p>
+        <nav aria-label="Social links">
+          <a
+            href="https://github.com/Shain001"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/shenyi001/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a
+            href="https://shain001.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Blog</a
+          >
+          <a href="#top">Back to top ↑</a>
+        </nav>
       </div>
     </footer>
-    <!-- /END Footer Section -->
-
-    <script defer type="module" src="index.js"></script>
-   
+    <script type="module" src="index.js"></script>
   </body>
 </html>
